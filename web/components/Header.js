@@ -77,7 +77,7 @@ class Header extends Component {
             <a title={title}>{this.renderLogo(logo)}</a>
           </Link>
         </h1>
-        <nav className={`font-serif text-white ${styles.nav}`}>
+        <nav className={`font-sans text-white ${styles.nav}`}>
           <ul className={styles.navItems}>
             {navItems &&
               navItems.map((item) => {

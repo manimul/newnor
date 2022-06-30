@@ -42,28 +42,37 @@ function Hero(props) {
 
   return (
     <div className={`${styles.root}`} style={style}>
-      <div className={`min-h-screen   p-4 md:max-w-5xl mx-auto z-10 `}>
-        <div
-          className={`flex items-center h-96 bg-black bg-opacity-10 backdrop-blur-sm px-10 py-20 justify-center mt-48 ${styles.decoration} `}
-        >
+      <div className={`text-center py-12   p-4 w-auto mx-auto z-10 `}>
+        <div className={`  h-96 px-10 py-10 mx-auto md:w-3/4    mt-32 `}>
           {logo && (
-            <img
-              src={builder.image(logo).auto('format').width(400).url()}
-              loading="lazy"
-              className="text-white  md:w-1/2 p-12 "
-              alt={heading}
-            />
+            <>
+              <img
+                src={builder.image(logo).auto('format').width(800).url()}
+                loading="lazy"
+                className="text-white  md:w-1/4 py-4  mx-auto  "
+                alt={heading}
+              />
+              <h1 className="  text-3xl  md:text-6xl font-sans font-bold   mx-auto ">{heading}</h1>
+            </>
           )}
-          {!logo && <h1 className="  text-3xl md:w-3/4  md:text-5xl font-serif   ">{heading}</h1>}
-          <div className={`w-2/4 font-thin  text-base ${styles.tagline}`}>
-            {tagline && <SimpleBlockContent blocks={tagline} />}
-            {ctas && (
-              <div className={styles.ctas}>
-                {ctas.map((cta) => (
-                  <Cta {...cta} key={cta._key} />
-                ))}
-              </div>
-            )}
+          {!logo && (
+            <h1 className="  text-3xl  md:text-6xl font-sans font-bold  mx-auto drop-shadow-lg  ">
+              {heading}
+            </h1>
+          )}
+          <div
+            className={`flex flex-col justify-center   align-middle text-center drop-shadow-lg   text-base mx-auto ${styles.tagline}`}
+          >
+            <div className="mx-auto text-center text-lg font-medium md:w-3/4 drop-shadow-lg ">
+              {tagline && <SimpleBlockContent blocks={tagline} />}
+              {ctas && (
+                <div className={`text-center mx-auto justify-center ${styles.ctas}`}>
+                  {ctas.map((cta) => (
+                    <Cta {...cta} key={cta._key} />
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

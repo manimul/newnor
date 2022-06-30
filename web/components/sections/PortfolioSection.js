@@ -12,11 +12,13 @@ function PortfolioSection(props) {
 
   return (
     <div>
-      <section className="mx-auto space-y-4 bg-gradient-to-br from-gray-50 to-yellow-50">
+      <section className="mx-auto space-y-4 bg-gradient-to-br from-gray-50 to-50">
         <div className="px-8 py-32 mx-auto">
           <div className="max-w-xl mx-auto text-center mb-12">
-            <p className={styles.label}>{label}</p>
-            <h2 className={`text-5xl font-serif mb-4  capitalize {styles.heading}`}>{heading}</h2>
+            <p className="tracking-widest font-semibold opacity-50">{label}</p>
+            <h2 className={`  mb-4  md:text-5xl font-sans font-bold {styles.heading}`}>
+              {heading}
+            </h2>
             {text && <SimpleBlockContent blocks={text} />}
           </div>
 
@@ -46,13 +48,13 @@ function PortfolioSection(props) {
                           <img
                             src={builder.image(portfolio.logo).auto('format').width(400).url()}
                             loading="lazy"
-                            className="text-white  "
+                            className="text-white max-h-36  "
                             alt={heading}
                           />
                         </div>
                         <a
                           href={portfolio.slug.current}
-                          className=" opacity-0 group-hover:opacity-100  transition duration-500 absolute inset-x-4 bottom-4 left-0 right-0 mx-auto w-36  flex items-center space-x-2 z-20"
+                          className=" opacity-0 group-hover:opacity-100  transition duration-500 absolute inset-x-4 bottom-4 left-0 right-0 mx-auto w-44  flex items-center space-x-2 z-20"
                         >
                           <div
                             aria-hidden="true"
@@ -74,7 +76,7 @@ function PortfolioSection(props) {
                               />
                             </svg>
                           </div>
-                          <span className="text-white">See Portfolio</span>
+                          <span className="text-white">Se Casestudie</span>
                         </a>
                       </div>
                     </div>

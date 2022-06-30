@@ -26,7 +26,7 @@ export default {
                 {
                   buildHookId: '',
                   title: 'Landing pages Website',
-                  name: '',
+                  name: 'hcn-capital',
                   apiId: ''
                 }
               ]

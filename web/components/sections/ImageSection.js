@@ -18,7 +18,7 @@ function ImageSection(props) {
   return (
     <div className={styles.root}>
       <section
-        className={`container mx-auto flex flex-col font-serif  ${
+        className={`container mx-auto flex flex-col font-sans  ${
           layout ? 'md:flex-row-reverse	' : 'md:flex-row '
         }`}
       >
@@ -29,18 +29,18 @@ function ImageSection(props) {
           />
         </div>
         <div className="md:w-1/2 p-12 flex-col  space-y-4">
-          <div className="text-xs uppercase   ">{label}</div>
-          <h2 className="text-3xl font-serif">{heading}</h2>
+          <div className="tracking-widest opacity-50   ">{label}</div>
+          <h2 className="md:text-5xl font-sans font-bold ">{heading}</h2>
           {popout && (
-            <div className="font-bold text-lg  bg-orange-50 pl-32 shadow-zinc-100 shadow-lg   py-16 bg-opacity-50 backdrop-blur-lg -m-32">
-              <p className=" ">
+            <div className=" text-sm  bg-gray-50 font-normal p-4       ">
+              <p className="opacity-75 ">
                 {' '}
                 <SimpleBlockContent blocks={popout} />
               </p>
             </div>
           )}
           <div className="">
-            {text && <SimpleBlockContent className="font-serif " blocks={text} />}
+            {text && <SimpleBlockContent className="font-sans " blocks={text} />}
           </div>
 
           {cta && cta.route && <Cta {...cta} />}

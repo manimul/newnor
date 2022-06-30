@@ -15,7 +15,7 @@ function NewsSection(props) {
       <section className="mx-auto space-y-4 bg-gradient-to-br from-yellow-50 to-orange-50">
         <div className="md:max-w-4xl py-32 mx-auto">
           <div className={styles.label}>{label}</div>
-          <h2 className={`text-4xl font-serif mb-12 {styles.heading}`}>{heading}</h2>
+          <h2 className={`text-4xl font-sans mb-12 {styles.heading}`}>{heading}</h2>
           {text && <SimpleBlockContent blocks={text} />}
           {newsPosts && (
             <div>
@@ -39,7 +39,7 @@ function NewsSection(props) {
                         alt={heading}
                       />
                       <div className="relative space-y-4  p-4">
-                        <h4 className="text-2xl font-serif capitalize text-yellow-900">
+                        <h4 className="text-2xl font-sans capitalize text-yellow-900">
                           {newsPost.title}
                         </h4>
                         <p className="text-gray-600">

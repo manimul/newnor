@@ -34,15 +34,6 @@
   z-index: 1;
 }
 
-.decoration {
-  background: linear-gradient(white, white) 0 0, linear-gradient(white, white) 0 0,
-    linear-gradient(white, white) 100% 100%, linear-gradient(white, white) 100% 100%,
-    rgba(255, 255, 255, 0);
-  padding: 41px;
-  background-size: 88px 3px, 3px 80px;
-  background-repeat: no-repeat;
-}
-
 .title {
   position: relative;
   font-weight: 600;
