@@ -3,7 +3,6 @@ import imageUrlBuilder from '@sanity/image-url'
 import client from '../../client'
 import PropTypes from 'prop-types'
 import SimpleBlockContent from '../SimpleBlockContent'
-import styles from './TextSection.module.css'
 
 const builder = imageUrlBuilder(client)
 
