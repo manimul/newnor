@@ -42,8 +42,8 @@ function Hero(props) {
 
   return (
     <div className={`${styles.root}`} style={style}>
-      <div className={`text-center py-12   p-4 w-auto mx-auto z-10 `}>
-        <div className={`  h-96 px-10 py-10 mx-auto md:w-3/4    mt-32 `}>
+      <div className={`text-center md:py-12   md:p-4 w-auto mx-auto z-10 `}>
+        <div className={`  md:h-96 px-10 py-10 mx-auto md:w-3/4    mt-32 `}>
           {logo && (
             <>
               <img
@@ -63,7 +63,7 @@ function Hero(props) {
           <div
             className={`flex flex-col justify-center   align-middle text-center drop-shadow-lg   text-base mx-auto ${styles.tagline}`}
           >
-            <div className="mx-auto text-center text-lg font-medium md:w-3/4 drop-shadow-lg ">
+            <div className="mx-auto text-center text-sm md:text-lg font-medium md:w-3/4 drop-shadow-lg ">
               {tagline && <SimpleBlockContent blocks={tagline} />}
               {ctas && (
                 <div className={`text-center mx-auto justify-center ${styles.ctas}`}>

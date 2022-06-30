@@ -16,21 +16,21 @@ function ImageSection(props) {
   }
 
   return (
-    <div className={styles.root}>
+    <div className={` ${styles.root} `}>
       <section
-        className={`container mx-auto flex flex-col font-sans  ${
+        className={`md:py-6 container mx-auto flex flex-col font-sans  ${
           layout ? 'md:flex-row-reverse	' : 'md:flex-row '
         }`}
       >
         <div className="md:w-1/2 ">
           <img
             src={builder.image(image).auto('format').width(2000).url()}
-            className={`${styles.image}`}
+            className={`py-0 ${styles.image}`}
           />
         </div>
-        <div className="md:w-1/2 p-12 flex-col  space-y-4">
+        <div className="md:w-1/2 py-6 px-6  md:px-12 flex-col  space-y-2">
           <div className="tracking-widest opacity-50   ">{label}</div>
-          <h2 className="md:text-5xl font-sans font-bold ">{heading}</h2>
+          <h2 className="text-3xl md:text-5xl font-sans font-bold ">{heading}</h2>
           {popout && (
             <div className=" text-sm  bg-gray-50 font-normal p-4       ">
               <p className="opacity-75 ">

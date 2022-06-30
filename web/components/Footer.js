@@ -13,7 +13,7 @@ function Footer(props) {
       className={` text-white bg-gradient-to-br to-cyan-900 from-slate-900 pb-12 {styles.root} pt-0`}
     >
       <section className={`{[contact-section]   ${styles.gradient}  }`}>
-        <div className="max-w-5xl  mx-auto flex  flex-col pt-32 pb-12 px-12 md:flex-row md:py-32 text-white md:space-x-16 ">
+        <div className="max-w-5xl  mx-auto flex  flex-col py-32  px-6 md:px-12 md:flex-row md:py-32 text-white space-y-8 md:space-x-16 ">
           <div className="md:w-1/2 space-y-4">
             {' '}
             <h2 className=" text-cyan-500 font-medium opacity-50 tracking-widest">Kontakt Os</h2>

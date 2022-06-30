@@ -1,8 +1,8 @@
-@import "../../styles/custom-media.css";
+@import '../../styles/custom-media.css';
 
 .root {
   position: relative;
-  padding: 2rem 0;
+  padding: 0;
 
   @media (--media-min-medium) {
     padding: 4rem 0;

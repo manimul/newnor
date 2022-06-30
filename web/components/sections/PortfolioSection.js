@@ -13,10 +13,10 @@ function PortfolioSection(props) {
   return (
     <div>
       <section className="mx-auto space-y-4 bg-gradient-to-br from-gray-50 to-50">
-        <div className="px-8 py-32 mx-auto">
+        <div className="px-4 py-32 mx-auto">
           <div className="max-w-xl mx-auto text-center mb-12">
             <p className="tracking-widest font-semibold opacity-50">{label}</p>
-            <h2 className={`  mb-4  md:text-5xl font-sans font-bold {styles.heading}`}>
+            <h2 className={`   text-3xl md:text-5xl font-sans font-bold {styles.heading}`}>
               {heading}
             </h2>
             {text && <SimpleBlockContent blocks={text} />}
@@ -54,7 +54,7 @@ function PortfolioSection(props) {
                         </div>
                         <a
                           href={portfolio.slug.current}
-                          className=" opacity-0 group-hover:opacity-100  transition duration-500 absolute inset-x-4 bottom-4 left-0 right-0 mx-auto w-44  flex items-center space-x-2 z-20"
+                          className=" md:opacity-0 group-hover:opacity-100  transition duration-500 absolute inset-x-4 bottom-4 left-0 right-0 mx-auto w-44  flex items-center space-x-2 z-20"
                         >
                           <div
                             aria-hidden="true"

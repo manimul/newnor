@@ -74,19 +74,25 @@ class Header extends Component {
       <div className={`z-20 w-screen mx-auto  ${styles.root}`} data-show-nav={showNav}>
         <h1 className={` text-white  ${styles.branding}`}>
           <Link href={'/'}>
-            <a title={title}>{this.renderLogo(logo)}</a>
+            <a className="ml-4 -mt-3" title={title}>
+              {this.renderLogo(logo)}
+            </a>
           </Link>
         </h1>
-        <nav className={`font-sans text-white ${styles.nav}`}>
-          <ul className={styles.navItems}>
+        <nav className={`font-sans  text-white ${styles.nav}`}>
+          <ul className={` ${styles.navItems}`}>
             {navItems &&
               navItems.map((item) => {
                 const {slug, title, _id} = item
                 const isActive = slugParamToPath(router.query.slug) === slug.current
                 return (
-                  <li key={_id} className={styles.navItem}>
+                  <li key={_id} className={`${styles.navItem}`}>
                     <Link href={getPathFromSlug(slug.current)}>
-                      <a data-is-active={isActive ? 'true' : 'false'} aria-current={isActive}>
+                      <a
+                        className=""
+                        data-is-active={isActive ? 'true' : 'false'}
+                        aria-current={isActive}
+                      >
                         {title}
                       </a>
                     </Link>
