@@ -15,7 +15,7 @@ function PortfolioSection(props) {
         <div className="px-4 py-32 mx-auto">
           <div className="max-w-xl mx-auto text-center mb-12">
             <p className="tracking-widest font-semibold opacity-50">{label}</p>
-            <h2 className={`   text-3xl md:text-5xl font-sans font-bold {styles.heading}`}>
+            <h2 className={`   text-3xl md:text-5xl font-sans font-bold pb-4 {styles.heading}`}>
               {heading}
             </h2>
             {text && <SimpleBlockContent blocks={text} />}

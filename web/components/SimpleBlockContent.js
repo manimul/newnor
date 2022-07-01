@@ -14,7 +14,7 @@ function SimpleBlockContent(props) {
 
   return (
     <PortableText
-      className="text-sans"
+      className="text-sans space-y-2"
       value={blocks}
       components={{
         types: {

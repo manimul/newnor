@@ -39,11 +39,11 @@ function ImageSection(props) {
               </p>
             </div>
           )}
-          <div className="">
+          <div className="space-y-2 pb-4">
             {text && <SimpleBlockContent className="font-sans " blocks={text} />}
           </div>
 
-          {cta && cta.route && <Cta {...cta} />}
+          {cta && cta.route && <Cta className="" {...cta} />}
         </div>
       </section>
     </div>
